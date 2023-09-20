@@ -1,0 +1,17 @@
+.k:hover { background: gold; }
+.k {
+	float:left;
+	border: 0px solid green;
+}
+.t {text-align: center;}
+
+.gallery {
+	object-fit: cover;
+	object-position: 100% 0;
+}
+.gallery img {
+	padding:1px;
+	object-fit: cover;
+	width:150px;
+	height:150px;
+}

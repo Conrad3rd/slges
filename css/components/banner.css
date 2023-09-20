@@ -1,0 +1,35 @@
+.banner {
+  /* background-image: url(../../images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; */
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18, 11px -16px 12px rgba(255,255,255,0);
+}
+
+.background {
+  background-image: url(../../images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+}
+
+.banner h1, .banner p {
+  /* color: aquamarine; */
+  /* font-family: 'Roboto Mono', monospace; */
+}
+
+.banner h1{
+  font-size: 100px;
+}
+.banner p {
+  font-size: 50px;
+}
+.banner .container a {
+  margin: 100px 0px;
+  font-size: 50px;
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18, 11px -16px 12px rgba(255,255,255,0);
+  color: #ff18ae;
+}

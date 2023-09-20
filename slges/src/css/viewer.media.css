@@ -1,0 +1,10 @@
+@media only screen and (max-width: 600px) {
+
+
+.layout {display: inline;}
+.left {float:right}
+.right {}
+
+#media_hide {display: none;}
+
+}

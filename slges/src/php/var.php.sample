@@ -1,0 +1,10 @@
+<?php
+$servername = "********";
+$username = "********";
+$password = "********";
+$dbname = "********";
+
+$large = "sl_Esche/L/";
+$medium = "sl_Esche/M/";
+$small = "sl_Esche/S/";
+?>

@@ -1,0 +1,19 @@
+#footer {
+  background-color: rgb(32, 26, 26);
+  margin-top: 70px;
+  color: #49FF18;
+  font-size: 40px;
+}
+
+#footer a {
+  color: #49FF18;
+
+
+}
+
+.list-inline li {
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}

@@ -1,0 +1,61 @@
+/* Your button CSS file */
+
+
+.btn-medium {
+  background-color: red;
+  border-radius: 50%;
+  padding: 20px !important;
+  background-color:rgba(42, 78, 236, 0.703);
+  border: solid rgba(17, 57, 236, 0.788)
+}
+.btn-medium:hover {
+  background-color: red;
+  border-radius: 50%;
+  padding: 20px !important;
+  background-color:rgba(42, 78, 236, 0.555);
+  border: solid rgba(17, 57, 236, 0.788)
+}
+
+.btn-nuclear-green {
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18, 11px -16px 12px rgba(255, 255, 255, 0.726);
+  color: #49FF18;
+  border: solid rgba(56, 134, 60, 0) 2px;
+  background-color: rgba(0, 0, 0, 0.41);
+
+}
+
+.btn-nuclear-green:hover {
+  background-color:rgba(112, 226, 112, 0.664);
+}
+
+.btn-treehouse {
+  background-color:rgba(37, 226, 37, 0.075);
+  border: solid rgba(56, 134, 60, 0.315) 2px;
+  border-radius: 20px;
+}
+.btn-treehouse:hover {
+  background-color:rgba(112, 226, 112, 0.664);
+}
+
+.btn-yours {
+  /* background-color: blue; */
+  border: solid gray 2px;
+  border-radius: 5px 10px 5px 10px;
+}
+
+.btn-yours:hover {
+  /* background-color: blue; */
+  border: solid gray 2px;
+  border-radius: 5px 10px 5px 10px;
+  background-color:rgba(123, 123, 123, 0.2);
+}
+
+.btn {
+margin: 100px 5px;
+padding: 2px 8px;
+}
+
+/* .btn {
+  margin-top: 200px;
+
+} */

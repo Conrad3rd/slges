@@ -1,0 +1,51 @@
+@media only screen and (max-width: 600px) {
+
+
+
+
+div#zoom > img {
+  width: 100%;
+}
+
+
+
+html, body {
+
+
+
+/*
+overflow: hidden;
+height: unset;
+
+*/
+}
+
+
+
+* {
+
+/*
+  height: unset !important;
+  overflow: unset !important;
+
+*/
+  height: unset !important;
+  overflow: unset !important;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+}

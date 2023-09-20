@@ -1,0 +1,158 @@
+
+
+
+.selected_hashs {
+line-height: 2;
+height:100px;
+margin-top:20px;
+position:relative;
+}
+
+.hashColl:hover{
+background: lightgreen;
+}
+
+.hashPlus:hover{
+
+background: lightgreen;
+
+}
+
+.hashPlus {
+background: #ffffcc;
+border-radius: 25px;
+padding:0px 15px 0px 15px;
+margin-left:3px;
+}
+
+.hashColl {
+
+padding-left:9px;
+border: solid 1px gray;
+border-radius: 25px;
+line-height: 1.8;
+background: lightgray;
+white-space: nowrap;
+}
+
+
+
+
+.count {
+color: white;
+}
+
+
+
+
+
+.hash {
+
+border: solid 2px gray;
+margin:4px;
+background: lightgray;
+border-radius: 25px;
+padding:3px 10px 3px 10px;
+text-decoration: none;
+color: black;
+white-space: nowrap;
+
+
+}
+.text-deco {
+text-decoration: none;
+color: black;
+
+}
+.loeschen {
+
+margin:3px -10px 3px 10px;
+background: red;
+border-radius: 25px;
+padding:3px 10px 3px 10px;
+
+}
+
+.add_hash {
+background: lightgreen;
+border-radius: 25px;
+padding:3px 5px 3px 5px;
+margin-left: -10px;
+}
+
+
+
+.allhashs {
+position:relative;
+
+bottom:1px;
+
+
+
+
+}
+
+.link {
+background: lightgreen;
+
+color: black;
+text-decoration: none;
+}
+
+
+html, body {
+background:#333
+
+
+}
+.layout {
+
+	height: 99.9vh;
+
+
+	display: grid;
+	grid:
+		"left right" 100%
+		/ 60% 40%;
+		gap: 8px;
+}
+
+.left { grid-area: left; background:#333;}
+.right { grid-area: right; background:#e6e6e6;}
+
+
+
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+img {
+	object-fit:contain;
+	max-height: 92%;
+	width: 100%;
+
+}
+
+.search-container {
+	line-height:50px;
+
+}
+
+
+
+/*
+Bildwechsler 50% left and right
+*/
+.K_container {position: relative; width: fit-content}
+.K_right,.K_left {
+
+  height:95%;
+  width: 50%;
+  position: absolute;
+  top: 0px;
+}
+
+.K_right {right: 0px;}
+.K_left {left: 0px;}
