@@ -13,7 +13,7 @@
 
 
   <!-- code a Hero / Banner section -->
-<div class="banner background">
+<div class="banner background2">
   <div class="container">
     <div class="mt5"><h1>Sammlung Esche</h1></div>
     <div class="mt5"><p>Myanmar Bilder</p></div>
