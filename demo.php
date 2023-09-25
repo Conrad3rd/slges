@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,27 +10,17 @@
 <body>
   <?php include 'components/navbar.php';?>
 
-
-
-
-
-
     <div class="d-flex bd-highlight flex-wrap mt-5" style="height: 75vh;">
 
       <div class="p-2 flex-fill bd-highlight text-center">
-      <a href="images/slges.01.webp"><img src="images/slges.01.webp" style="height: 400px;" alt="img"></a>
-
+        <a href="images/slges.01.webp"><img src="images/slges.01.webp" style="height: 400px;" alt="img"></a>
       </div>
-      <div class="p-2 flex-fill bd-highlight text-center">
-      <a href="images/slges.webp"><img src="images/slges.webp" style="height: 400px;" alt="img"></a>
 
+      <div class="p-2 flex-fill bd-highlight text-center">
+        <a href="images/slges.webp"><img src="images/slges.webp" style="height: 400px;" alt="img"></a>
       </div>
 
     </div>
-
-
-
-
 
   <?php include 'components/footer.php';?>
   <!-- Optional JavaScript -->
