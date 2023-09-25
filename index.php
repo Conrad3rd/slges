@@ -23,6 +23,12 @@ include 'components/navbar.php';
         </div>
         <div class="col">
           <h1 class="text-center">Sammlung Esche</h1>
+          <p class="mt-5">
+            Die Webplattform dient als umfassendes Repository mit Tausenden von Fotos aus Myanmar.
+            Benutzer können dieses visuelle Archiv mit Hilfe eines robusten Tagging-Systems leicht
+            durchsuchen. Die Website filtert und zeigt relevante Bilder anhand von Schlüsselwörtern
+            und Tags.
+          </p>
         </div>
       </div>
     </div>
