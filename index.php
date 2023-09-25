@@ -23,7 +23,7 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="slges">Login</a>
-            <a class="dropdown-item" href="demo">Demo</a>
+            <a class="dropdown-item disabled" href="demo">Demo</a>
           </div>
         </li>
       </ul>
@@ -47,7 +47,16 @@
 
   </div>
 
-
+  <div class="card mt-5">
+    <div class="card-body">
+      <!-- <h5 class="card-title">Special title treatment</h5> -->
+      <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+      <a href="https://bruniversum.com/"><span><img style="height:50px" src="images/Bruniversum30.webp" alt=""> Bruniversum</span></a>
+      <a href="https://oldburmahand.com/"><span><img style="height:50px" src="images/OldBurmaHand30.webp" alt=""> Old Burma Hand</span></a>
+      <a href="https://azureskytoursmyanmar.com"><span><img style="height:50px" src="images/AzureSkyTours.webp" alt=""> Azure Sky Tours</span></a>
+    </div>
+  </div>
 
 
   <!-- Optional JavaScript -->
