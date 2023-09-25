@@ -55,13 +55,13 @@
 
       <div class="d-flex bd-highlight flex-wrap">
 
-        <div class="p-2 flex-fill bd-highlight">
+        <div class="p-2 flex-fill bd-highlight text-center">
           <a href="https://bruniversum.com/"><span><img style="height:50px" src="images/Bruniversum30.webp" alt=""> Bruniversum</span></a>
         </div>
-        <div class="p-2 flex-fill bd-highlight">
+        <div class="p-2 flex-fill bd-highlight text-center">
           <a href="https://oldburmahand.com/"><span><img style="height:50px" src="images/OldBurmaHand30.webp" alt=""> Old Burma Hand</span></a>
         </div>
-        <div class="p-2 flex-fill bd-highlight">
+        <div class="p-2 flex-fill bd-highlight text-center">
           <a href="https://azureskytoursmyanmar.com"><span><img style="height:50px" src="images/AzureSkyTours.webp" alt=""> Azure Sky Tours</span></a>
         </div>
 
