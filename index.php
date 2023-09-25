@@ -23,7 +23,8 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="slges">Login</a>
-            <a class="dropdown-item disabled" href="demo">Demo</a>
+            <!-- <a class="dropdown-item disabled" href="demo">Demo</a> -->
+            <p class="dropdown-item disabled">Demo</p>
           </div>
         </li>
       </ul>
