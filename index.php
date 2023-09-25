@@ -24,7 +24,7 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="slges">Login</a>
             <!-- <a class="dropdown-item disabled" href="demo">Demo</a> -->
-            <p class="dropdown-item disabled">Demo</p>
+            <span class="dropdown-item disabled">Demo</span>
           </div>
         </li>
       </ul>
