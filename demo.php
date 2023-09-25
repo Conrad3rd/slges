@@ -13,23 +13,20 @@
 
 
 
-  <div class="container text-center mt-5" style="height: 70vh;">
 
-    <div>
-      <div class="row align-items-start">
-        <div class="col">
-          <a href="images/slges.webp"><img src="images/slges.webp" style="height: 250px;" alt="img"></a>
-        </div>
-        <div class="col">
-        <a href="images/slges.01.webp"><img src="images/slges.01.webp" style="height: 250px;" alt="img"></a>
-        </div>
+
+    <div class="d-flex bd-highlight flex-wrap mt-5" style="height: 75vh;">
+
+      <div class="p-2 flex-fill bd-highlight text-center">
+      <a href="images/slges.01.webp"><img src="images/slges.01.webp" style="height: 400px;" alt="img"></a>
+
       </div>
+      <div class="p-2 flex-fill bd-highlight text-center">
+      <a href="images/slges.webp"><img src="images/slges.webp" style="height: 400px;" alt="img"></a>
+
+      </div>
+
     </div>
-
-
-
-  </div>
-
 
 
 
