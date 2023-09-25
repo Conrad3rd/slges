@@ -53,7 +53,7 @@
       <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
       <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
 
-      <div class="d-flex bd-highlight">
+      <div class="d-flex bd-highlight flex-wrap">
 
         <div class="p-2 flex-fill bd-highlight">
           <a href="https://bruniversum.com/"><span><img style="height:50px" src="images/Bruniversum30.webp" alt=""> Bruniversum</span></a>
