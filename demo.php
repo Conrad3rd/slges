@@ -1,28 +1,27 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-  <title>SLGES</title>
+  <title>SLGES Demo</title>
 </head>
 <body>
+  <?php include 'components/navbar.php';?>
 
-<?php
-include 'components/navbar.php';
-?>
 
-  <div class="container text-center mt-5">
+
+
+  <div class="container text-center mt-5" style="height: 70vh;">
 
     <div>
       <div class="row align-items-start">
         <div class="col">
-          <img src="images/landing.webp" style="height: 80vh;" alt="img">
+          <a href="images/slges.webp"><img src="images/slges.webp" style="height: 250px;" alt="img"></a>
         </div>
         <div class="col">
-          <h1 class="text-center">Sammlung Esche</h1>
+        <a href="images/slges.01.webp"><img src="images/slges.01.webp" style="height: 250px;" alt="img"></a>
         </div>
       </div>
     </div>
@@ -32,13 +31,11 @@ include 'components/navbar.php';
   </div>
 
 
-  <?php
-    include 'components/footer.php';
-  ?>
 
 
 
 
+  <?php include 'components/footer.php';?>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
