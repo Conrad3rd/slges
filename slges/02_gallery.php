@@ -9,9 +9,9 @@
 <body>
 
 <?php
-require_once 'src/php/conn_open.php';
-require_once 'src/php/var.php';
-require_once 'src/php/filter_funktion.php';
+  require_once 'src/php/conn_open.php';
+  require_once 'src/php/var.php';
+  require_once 'src/php/filter_funktion.php';
 ?>
 <div class="gallery">
 <?php
@@ -38,11 +38,61 @@ require_once 'src/php/filter_funktion.php';
 
 
     } else {
-      $array = alle_bilder($conn, $small);
-        echo "Es gibt " . $array[0] . " Treffer<br>";
-      echo $array[1];
-    }
+      if(isset($_GET['page'])){
+        $page = $_GET["page"];
+        echo "Seite: $page  <br>";
+      }
 
+      if(isset($_GET['ipp'])){
+        $steps = $_GET["ipp"];
+        $ipp = $_GET["ipp"];
+
+        if($page == 1) {
+          $position = $steps-$steps;
+        } else if($page == 1) {
+          $position = $steps;
+        } else  {
+          $position = $steps*$page;
+        }
+
+        $sumHashTags = 17009;
+        $nextPage = $page;
+        $previousPage = $page;
+
+        $nextPage = ++$nextPage;
+        $previousPage = --$previousPage;
+        $array = alle_bilder($conn, $small, $steps, $position);
+        echo "<a href='?page=$previousPage&ipp=$ipp'>prev</a> === <a href='?page=$nextPage&ipp=$ipp'>next</a> <br> <br> <br>";
+        echo "Es gibt " . $array[0] . " Treffer<br>";
+        echo $array[1];
+
+      } else {
+
+        $steps = 40;
+
+        if($page == 1) {
+          $position = $steps-$steps;
+        } else if($page == 1) {
+          $position = $steps;
+        } else  {
+          $position = $steps*$page;
+        }
+
+        $sumHashTags = 17009;
+        $nextPage = $page;
+        $previousPage = $page;
+
+        $nextPage = ++$nextPage;
+        $previousPage = --$previousPage;
+        $array = alle_bilder($conn, $small, $steps, $position);
+        echo "<a href='?page=$previousPage'>prev</a> === <a href='?page=$nextPage'>next</a> <br> <br> <br>";
+        echo "Es gibt " . $array[0] . " Treffer<br>";
+        echo $array[1];
+
+
+      }
+
+    }
 
   /* ++++++++++++++++++++++++++++++++++++++
   Funktionen die mit GET aufgerufen werden
