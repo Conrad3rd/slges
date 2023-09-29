@@ -22,7 +22,7 @@ include 'components/navbar.php';
           <img src="images/landing.webp" style="height: 80vh;" alt="img">
         </div>
         <div class="col">
-          <h1 class="text-center">Sammlung Esche</h1>
+          <h1 class="text-center">Sammlung Esche (SLGES)</h1>
           <p class="mt-5">
             Die Webplattform dient als umfassendes Repository mit Tausenden von Fotos aus Myanmar.
             Benutzer können dieses visuelle Archiv mit Hilfe eines robusten Tagging-Systems leicht
