@@ -29,6 +29,13 @@ include 'components/navbar.php';
             durchsuchen. Die Website filtert und zeigt relevante Bilder anhand von Schlüsselwörtern
             und Tags.
           </p>
+          <p>
+            Die Sammlung Esche umfasst mehr als 13.000 Burma-Fotos, die in den 60er und 70er-Jahren
+            von Otto Esche aufgenommen wurden. Teils in Schwarz-Weiss, teils in Farbe. Das Spektrum
+            ist sehr weit gefasst, neben Landschaftsfotos und Fotos von Gebäuden sind auch
+            Familienbilder dabei. Otto Esche und seine Frau leiteten seinerzeit das 'German Institute',
+            das DDR-Pendant zum westdeutschen Goethe-Institut in Rangun.
+          </p>
         </div>
       </div>
     </div>
