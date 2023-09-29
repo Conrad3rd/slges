@@ -27,7 +27,7 @@
 
   if (isset($_POST['bild_id'])){
     $bild_id = $_POST['bild_id'];
-    echo "<code>   Bild ID = $bild_id POST<br></code>";
+    // echo "<code>   Bild ID = $bild_id POST<br></code>";
   }
 
   if (isset($_GET['bild_id'])){
@@ -55,7 +55,7 @@
 
   if (isset($_POST['hash_name'])){
     $hash_name = $_POST['hash_name'];
-    echo "<code>HashName = $hash_name<br></code>";
+    // echo "<code>HashName = $hash_name<br></code>";
   }
 
   # check if Hashname alredy exist
