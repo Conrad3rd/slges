@@ -16,7 +16,7 @@
         <a href="https://azureskytoursmyanmar.com"><span><img style="height:50px" src="images/AzureSkyTours.webp" alt=""> Azure Sky Tours</span></a>
       </div>
       <div class="p-2 flex-fill bd-highlight text-center">
-        <a href="https://github.com/Conrad3rd"><span><img style="height:50px" src="images/github.webp" alt=""> Github</span></a>
+        <a href="https://github.com/Conrad3rd"><span><img style="height:50px" src="images/githubMono.png" alt=""> Github</span></a>
       </div>
 
     </div>
