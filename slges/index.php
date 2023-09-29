@@ -61,9 +61,14 @@
               <ul>
                 <li><a href="01_viewer.php?id=<?php echo (rand(1,17009));?>">Viewer (random)</a></li>
                 <li>
+                  <!-- <a href="02_gallery.php?page=1&ipp=40"> -->
+                  <a href="01_gallery.php?funk=filter_exclude&exclude=9031,9143,379,381,384,9141,133,490,9099,358">
+                  Galerie</a>(Es werden 13180 Bilder geladen!)
+                </li>
+                <li>
                   <a href="02_gallery.php?page=1&ipp=40">
                   <!-- <a href="01_gallery.php?funk=filter_exclude&exclude=9031,9143,379,381,384,9141,133,490,9099,358"> -->
-                  Galerie</a>(Es werden 13180 Bilder geladen!)
+                  Galerie</a>(Paginator)
                 </li>
                 <li><a href="allHash.php">Hashtags</a></li>
                 <li><a href="notes.php">Notizen</a></li>
