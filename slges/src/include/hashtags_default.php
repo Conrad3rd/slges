@@ -2,7 +2,7 @@
 # Standard Hashs
 $hashs = array(
             "indischer Laden", "Myanmar", "Brücke", "Yangon", "Kopfbedeckung", "Handel", "Markt", "Laden",
-						"Text", "Fest", "Wasserfest", "Wasser", "Wasserfahrzeug", "Bambus", "Holz", "Hafen", "Pier", "Tier",
+						"Text", "Fest", "Wasserfest", "Wasser", "Wasserfahrzeug", "Bambus", "Holz", "Hafen", "Pier", "Wasserbüffel", "Tier",
             "Was ist das?",	"Wer ist das?",
             "nicht Myanmar", "Rot", "Nummernschild", "Bus", "Auto", "Rikscha", "Fahrrad", "Schirm",
             "Mönch", "Buddha", "Musik", "Tanz", "Dorf", "Lastenträger", "Bagan", "Bago", "Berg", "Soldat",
