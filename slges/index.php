@@ -51,6 +51,7 @@
                 <li>139,7 GB alle</li>
                 <li><a href="info.php">phpinfo()</a></li>
                 <li><a href="phpmyadmin">phpMyAdmin</a></li>
+                <li><a href="pages/gallery.php">New Gallery</a></li>
               </ul>
             </div>
           </div>
