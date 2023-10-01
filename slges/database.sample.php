@@ -4,15 +4,19 @@
     'USERNAME',
     'PSW'
   );
-  
+
   $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 
-
   function fetch_images() {
+    global $pdo;
+
     $image_id = 95;
     $image_id = $image_id - 6;
-    global $pdo;
-    return $pdo->query("SELECT * FROM Bilder ORDER BY id ASC LIMIT 11 OFFSET $image_id");
+
+    $stmt = $pdo->prepare("SELECT * FROM Bilder ORDER BY id ASC LIMIT 11 OFFSET :image_id");
+    $stmt->execute(['image_id' => $image_id]);
+    return $stmt;
+    // return $pdo->query("SELECT * FROM Bilder ORDER BY id ASC LIMIT 11 OFFSET $image_id");
     // return $pdo->query("SELECT * FROM `Bilder`");
   }
 
@@ -31,7 +35,5 @@
     $q = $pdo->query($query);
     return $q->fetch();
     */
-
-
   }
 ?>
