@@ -10,16 +10,15 @@
 ?>
 
 <?php $res = fetch_image($id);?>
-<?php var_dump($res);?>
-
-
-<a href="../sl_Esche/L/">asdfs</a>
+<?php $pfad = $res["pfad"];?>
+<?php $gid = $res["id"];?>
 
 
 
-<?php foreach ($res as $row) : ?>
-  <img src="<?php echo "../sl_Esche/S/$row[pfad]";?>" alt="img">
-  <?php echo "../sl_Esche/L/$row[pfad]";?>
-<?php endforeach ?>
+<img src="<?php echo "../sl_Esche/S/$pfad";?>" alt="img">
+<?php echo $gid;?>
+
+
+
 
 <?php include("./elements/footer.php");?>
