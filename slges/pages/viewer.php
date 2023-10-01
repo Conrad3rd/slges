@@ -1,5 +1,7 @@
 <?php include("../database.php");?>
 <?php include("./elements/header.php");?>
+<a href="../pages/gallery.php">new Gallery</a>
+
 <h1>Viewer</h1>
 
 

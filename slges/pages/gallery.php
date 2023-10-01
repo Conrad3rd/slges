@@ -1,7 +1,8 @@
 <?php include("../database.php");?>
 <?php include("./elements/header.php");?>
 
-
+<a href="/">Home</a>
+<a href="../">overview</a>
 <h1>Gallery</h1>
 <?php $res = fetch_images();?>
 <?php foreach ($res as $row) : ?>
