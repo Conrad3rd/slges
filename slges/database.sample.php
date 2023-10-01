@@ -15,6 +15,20 @@
 
   function fetch_image($id) {
     global $pdo;
-    return $pdo->query("SELECT * FROM `Bilder` WHERE id = $id");
+
+    $stmt = $pdo->prepare("SELECT * FROM `Bilder` WHERE id = :id");
+    $stmt->execute(['id' => $id]);
+    return $stmt->fetch();
+    /*
+    */
+
+    /*
+    $query = "SELECT * FROM `Bilder` WHERE id = '{$id}'";
+    var_dump($query);
+    $q = $pdo->query($query);
+    return $q->fetch();
+    */
+
+
   }
 ?>
