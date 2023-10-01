@@ -4,6 +4,9 @@
     'USERNAME',
     'PSW'
   );
+  
+  $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+
 
   function fetch_images() {
     $image_id = 95;
