@@ -4,24 +4,17 @@
 
   <h1>PDO Test2</h1>
 
-  <?php
-    $res = fetch_images();
-  ?>
+  <?php $res = fetch_images();?>
 
-  <table>
 
     <?php foreach ($res as $row) : ?>
-      <tr>
-        <td><?php echo "$row[id]";?></td>
-        <td>
-          <a href="../sl_Esche/L/<?php echo "$row[pfad]";?>">
-            <?php echo "$row[pfad]";?>
-          </a>
-          </td>
-        </tr>
-    <?php endforeach ?>
+      <?php
+        $id = $row["id"];
+        $pfad = $row["pfad"];
+      ?>
+        <a href='viewer.php?id=<?php echo $id;?>'><img src='<?php echo "../sl_Esche/S/$pfad";?>' alt="<?php echo $id ?>"><?php echo $id;?></a>
 
-  </table>
+    <?php endforeach ?>
 
 
   <?php include("./elements/footer.php");?>
