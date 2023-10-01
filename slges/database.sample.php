@@ -1,6 +1,6 @@
 <?php
   $pdo = new PDO(
-    'mysql:host=database;dbname=DBNAME',
+    'mysql:host=database;dbname=DBNAME;charset=utf8',
     'USERNAME',
     'PSW'
   );
