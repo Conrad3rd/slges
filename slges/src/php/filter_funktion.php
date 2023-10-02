@@ -1,6 +1,7 @@
 <?php
-function alle_bilder($conn, $small) {
-    $sql = "SELECT id, pfad FROM Bilder";
+function alle_bilder($conn, $small, $limit, $position) {
+    $sql = "SELECT * FROM Bilder ORDER BY id ASC LIMIT $limit OFFSET $position;";
+    // $sql = "SELECT id, pfad FROM Bilder";
     return pull_data($conn, $sql, $small);
 }
 

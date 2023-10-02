@@ -22,6 +22,7 @@
 
   function goBack() {
     return header('Location: ' . $_SERVER['HTTP_REFERER']);
+    exit;
   }
 
   if (isset($_POST['bild_id'])){

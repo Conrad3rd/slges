@@ -1,5 +1,10 @@
 .htaccess
 notizen.txt
+<<<<<<< HEAD
+=======
+php_test
+slges/database.php
+>>>>>>> new_gallery
 php.ini
 php_test
 slges/alt
