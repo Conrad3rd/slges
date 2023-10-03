@@ -22,6 +22,20 @@
 ?>
 
 
+<?php
+  $sample .= "\r\n".
+  "<div id='$bild_id' class='k'>
+    <div>
+      <a href='01_viewer.php?hash_name=$hash_name&id=$bild_id'>
+        <img src='$small$pfad' alt='img $bild_id' loading='lazy'>
+      </a>
+      <br>
+      <div class='t'>
+        $bild_id
+      </div>
+    </div>
+  </div>";
+?>
 
 <div style="float:left; margin: 5px">
   <a href='viewer.php?id=<?php echo $id;?>'>
