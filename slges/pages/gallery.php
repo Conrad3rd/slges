@@ -6,9 +6,15 @@
 <a href="../">overview</a>
 <h1>Gallery</h1>
 
-<?php echo paginator();?>
+<?php echo paginator();
+  $pageNumber = pageNumber();
+  $getImagePerPage = getImagePerPage();
+  echo "<div>$pageNumber = pageNumber</div>";
+  echo "<div>$getImagePerPage = getImagePerPage</div>";
 
-<?php $res = fetch_images();?>
+?>
+
+<?php $res = fetch_images(getImagePerPage(), pageNumber());?>
 <?php foreach ($res as $row) : ?>
 <?php
   $id = $row["id"];
