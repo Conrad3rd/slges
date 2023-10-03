@@ -22,13 +22,13 @@
     // echo "test12312";
       $value = $_GET["funk"];
       runfunGET($value, $conn, $small);
-    } else if(isset($_GET['funk2'])) {
+  } else if(isset($_GET['funk2'])) {
       $value = $_GET["funk2"];
       runfunGET2($value, $conn, $small);
 
-    } else if(isset($_GET['hash_used'])) {
+  } else if(isset($_GET['hash_used'])) {
       sortByUsedHashs($conn, $small);
-    } else if(isset($_POST['hash_name'])) {
+  } else if(isset($_POST['hash_name'])) {
       $hash_name = $_POST["hash_name"];
       getHahsID($conn, $small, $hash_name);
 
@@ -37,7 +37,7 @@
       // runfunGET2($value, $conn, $small);
 
 
-    } else {
+  } else {
       if(isset($_GET['page'])){
         $page = $_GET["page"];
         echo "Seite: $page  <br>";
@@ -92,7 +92,7 @@
 
       }
 
-    }
+  }
 
   /* ++++++++++++++++++++++++++++++++++++++
   Funktionen die mit GET aufgerufen werden
