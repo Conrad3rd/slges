@@ -9,8 +9,8 @@
 <?php echo paginator();
   $pageNumber = pageNumber();
   $getImagePerPage = getImagePerPage();
-  echo "<div>$pageNumber = pageNumber</div>";
-  echo "<div>$getImagePerPage = getImagePerPage</div>";
+  // echo "<div>$pageNumber = pageNumber</div>";
+  // echo "<div>$getImagePerPage = getImagePerPage</div>";
 
 ?>
 
@@ -39,10 +39,11 @@
 ?>
 -->
 
-<div style="float:left; margin: 5px">
-  <a href='viewer.php?id=<?php echo $id;?>'>
+<div class='card'>
+  <!-- <a href='viewer.php?id=<?php echo $id;?>'> -->
+  <a href='../01_viewer.php?id=<?php echo $id;?>'>
     <div><img src='<?php echo "../sl_Esche/S/$pfad";?>' alt="<?php echo $id ?>"></div>
-    <div><?php echo $id;?></div>
+    <div class="text-center nodeco"><?php echo $id;?></div>
   </a>
 </div>
 

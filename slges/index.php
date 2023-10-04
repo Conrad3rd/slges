@@ -51,7 +51,7 @@
                 <li>139,7 GB alle</li>
                 <li><a href="info.php">phpinfo()</a></li>
                 <li><a href="phpmyadmin">phpMyAdmin</a></li>
-                <li><a href="pages/gallery.php?page=1&ipp=48">New Gallery</a> (PDO prepare)</li>
+                <li><a href="pages/gallery.php?page=1&ipp=33">New Gallery</a> (PDO prepare + Paginator)</li>
                 <li><a href="02_gallery.php?page=1&ipp=40">Galerie</a> (Paginator)</li>
                 <li><a href="/">Landing</a></li>
               </ul>
