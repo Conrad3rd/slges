@@ -6,13 +6,29 @@
 <a href="../">overview</a>
 <h1>Gallery</h1>
 
+<!-- <button onclick="myFunction()">Click me</button>
+<p id="demo"></p> -->
+
+
+
+
+
+
 <?php echo paginator();
   $pageNumber = pageNumber();
   $getImagePerPage = getImagePerPage();
   // echo "<div>$pageNumber = pageNumber</div>";
   // echo "<div>$getImagePerPage = getImagePerPage</div>";
-
+  $morePictures = $getImagePerPage + 1;
+  $lessPictures = $getImagePerPage - 1;
 ?>
+
+<div>
+  <a href="gallery.php?page=<?php echo getPosion(); ?>&ipp=<?php echo $lessPictures; ?>"><button>-</button></a>
+  <a href="gallery.php?page=<?php echo getPosion(); ?>&ipp=<?php echo $morePictures; ?>"><button>+</button></a>
+</div>
+
+
 
 <?php $res = fetch_images(getImagePerPage(), pageNumber());?>
 <?php foreach ($res as $row) : ?>
