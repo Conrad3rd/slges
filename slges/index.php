@@ -70,6 +70,8 @@
                 </li>
                 <li><a href="allHash.php">Hashtags</a></li>
                 <li><a href="notes.php">Notizen</a></li>
+                <li><a href="pages/gallery.php?page=1&ipp=33">New Gallery</a></li>
+
                   <!-- <li><a href="/test_db.php">Test DB Connection with mysqli</a></li>
                   <li><a href="/test_db_pdo.php">Test DB Connection with PDO</a></li>
 
