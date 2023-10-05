@@ -1,12 +1,12 @@
 <?php
-  function getPosion() {
+  function getPosition() {
     if(isset($_GET['page'])){
       return $_GET["page"];
     }
   }
 
   function getImagePerPage() {
-    $page = getPosion();
+    $page = getPosition();
 
     if(isset($_GET['ipp'])){
       $steps = $_GET["ipp"];
@@ -15,7 +15,7 @@
   }
 
   function pageNumber() {
-    $page = getPosion();
+    $page = getPosition();
     $steps = getImagePerPage();
     if($page == 1) {
       return $steps-$steps;
@@ -27,7 +27,7 @@
   }
 
   function paginator() {
-    $page = getPosion();
+    $page = getPosition();
     $ipp = getImagePerPage();
 
     $sumHashTags = 17009;
@@ -39,11 +39,27 @@
 
 
     $string = "<div>Seite: $page</div>
-                <a href='?page=$prevPage&ipp=$ipp'><button type='button' class='button is-success'>prev</button></a>
+                <a href='?page=$prevPage&ipp=$ipp'><button type='button' class='button is-warning'>prev</button></a>
                 ===
-                <a href='?page=$nextPage&ipp=$ipp'><button type='button' class='button is-success'>next</button></a>
+                <a href='?page=$nextPage&ipp=$ipp'><button type='button' class='button is-warning'>next</button></a>
                 </div>";
     return $string;
 
   }
+
+  function ppi() {
+
+    $prev = getImagePerPage() - 1;
+    $next = getImagePerPage() + 1;
+    $pos = getPosition();
+
+    $string = "
+    <div>
+      <a href='gallery.php?page=$pos&ipp=$prev'><button type='button' class='button is-info'>-</button></a>
+      <a href='gallery.php?page=$pos&ipp=$next'><button type='button' class='button is-info'>+</button></a>
+    </div>
+    ";
+    return $string;
+  }
+
 ?>
