@@ -12,9 +12,8 @@
 
 
 
-
-
-<?php echo paginator();
+<div class="text-center"><?php echo paginator();?></div>
+<?php
   $pageNumber = pageNumber();
   $getImagePerPage = getImagePerPage();
   // echo "<div>$pageNumber = pageNumber</div>";
@@ -66,4 +65,5 @@
 
 <?php endforeach ?>
 <div style="clear: left;"></div>
+<div class="text-center"><?php echo paginator();?></div>
 <?php include("./elements/footer.php");?>

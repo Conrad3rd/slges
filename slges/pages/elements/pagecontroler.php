@@ -36,8 +36,12 @@
 
     $nextPage = ++$nextPage;
     $prevPage = --$prevPage;
+
+
     $string = "<div>Seite: $page</div>
-                <div style='margin-bottom: 20px;'><a href='?page=$prevPage&ipp=$ipp'>prev</a> === <a href='?page=$nextPage&ipp=$ipp'>next</a>
+                <a href='?page=$prevPage&ipp=$ipp'><button type='button' class='button is-success'>prev</button></a>
+                ===
+                <a href='?page=$nextPage&ipp=$ipp'><button type='button' class='button is-success'>next</button></a>
                 </div>";
     return $string;
 
