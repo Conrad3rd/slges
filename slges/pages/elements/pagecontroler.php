@@ -38,11 +38,13 @@
     $prevPage = --$prevPage;
 
 
-    $string = "<div>Seite: $page</div>
-                <a href='?page=$prevPage&ipp=$ipp'><button type='button' class='button is-warning'>prev</button></a>
-                ===
-                <a href='?page=$nextPage&ipp=$ipp'><button type='button' class='button is-warning'>next</button></a>
-                </div>";
+    $string =
+      "<div>Seite: $page</div>
+        <a href='?page=$prevPage&ipp=$ipp'><button type='button' class='button is-warning'>prev</button></a>
+        ===
+        <a href='?page=$nextPage&ipp=$ipp'><button type='button' class='button is-warning'>next</button></a>
+        </div>
+      ";
     return $string;
 
   }
@@ -51,15 +53,30 @@
 
     $prev = getImagePerPage() - 1;
     $next = getImagePerPage() + 1;
-    $pos = getPosition();
+    $page = getPosition();
 
     $string = "
     <div>
-      <a href='gallery.php?page=$pos&ipp=$prev'><button type='button' class='button is-info'>-</button></a>
-      <a href='gallery.php?page=$pos&ipp=$next'><button type='button' class='button is-info'>+</button></a>
+      <a href='gallery.php?page=$page&ipp=$prev'><button type='button' class='button is-info'>-</button></a>
+      <a href='gallery.php?page=$page&ipp=$next'><button type='button' class='button is-info'>+</button></a>
     </div>
     ";
     return $string;
+  }
+
+  function goToImage($image_id) {
+    // if(isset($_GET['id'])){
+    //   $image_id = $_GET["id"];
+    // }
+
+    $page = getPosition();
+    $ipp = getImagePerPage();
+
+    // $goToPage = (($page * $ipp)+($ipp/2));
+    // $sumHashTags = 17009;
+    $goToPage = floor($image_id / 33);
+    // $goToPage = floor(7940 / $ipp);
+    return $goToPage;
   }
 
 ?>

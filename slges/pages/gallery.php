@@ -61,5 +61,10 @@
 
 <?php endforeach ?>
 <div style="clear: left;"></div>
-<div class="text-center"><?php echo paginator();?></div>
+<div class="text-center"><?php
+echo goToImage(7832);
+echo paginator();
+
+
+?></div>
 <?php include("./elements/footer.php");?>

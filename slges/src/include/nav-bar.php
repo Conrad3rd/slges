@@ -1,4 +1,6 @@
 <?php
+
+
     // if ($hash_id == 9099) {
 
     // }
@@ -18,12 +20,14 @@
       }
     }
   }
-
+  include("pages/elements/pagecontroler.php");
+  $page = goToImage($bild_id);
 // Nav Bar
+// <li><a href='01_gallery.php#$bild_id'>Alle Bilder</a></li>
 		echo "<div class='left'>";
 		echo "
 			<ul>
-				<li><a href='01_gallery.php#$bild_id'>Alle Bilder</a></li>
+				<li><a href='pages/gallery.php?page=$page&ipp=33'>Alle Bilder</a></li>
 				<li><a href='01_viewer.php?id=$bevor'><</a></li>
 				<li><a href='01_viewer.php?id=$next'>></a></li>
 				<li id='media_hide'><a href='01_zoomer.php?id=$bild_id'>zoom</a></li>
