@@ -7,8 +7,6 @@
 
 <h1>Gallery</h1>
 
-
-
 <!-- Page per image  -->
 <div class="text-center"><?php echo ppi(); ?></div>
 
