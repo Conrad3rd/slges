@@ -1,4 +1,4 @@
-<?php include("../database.php");?>
+<?php include("../init.php");?>
 <?php include("./elements/header.php");?>
 <?php include("./elements/pagecontroler.php");?>
 
