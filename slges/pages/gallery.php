@@ -17,7 +17,7 @@
 
 
 <?php
-  $picturesRepository = new App\Picture\PicturesRepository;
+  $picturesRepository = new App\Picture\PicturesRepository($pdo);
   $res = $picturesRepository->fetchPictures(getImagePerPage(), pageNumber());
   // $res = fetch_images(getImagePerPage(), pageNumber());
 ?>
