@@ -2,20 +2,20 @@
 <?php include("./elements/header.php");?>
 <?php include("./elements/pagecontroler.php");?>
 
-<a href="/">Home</a>
-<a href="../">overview</a>
+<a href='/'><button type='button' class='button is-info'>Home</button></a>
+<a href='../'><button type='button' class='button is-info'>Overview</button></a>
+
 <h1>Gallery</h1>
 
-<!-- <button onclick="myFunction()">Click me</button>
-<p id="demo"></p> -->
+
+
 <!-- Page per image  -->
 <div class="text-center"><?php echo ppi(); ?></div>
 
-
-
+<!-- Navigation previous picture and next picture -->
 <div class="text-center"><?php echo paginator();?></div>
 
-
+<!-- Load pictures from DB and set ipp + page -->
 <?php
   $picturesRepository = new App\Picture\PicturesRepository($pdo);
   $res = $picturesRepository->fetchPictures(getImagePerPage(), pageNumber());
@@ -28,39 +28,14 @@
   $pfad = $row["pfad"];
 ?>
 
-
-<!--
-<?php
-  $sample .= "\r\n".
-  "<div id='$bild_id' class='k'>
-    <div>
-      <a href='01_viewer.php?hash_name=$hash_name&id=$bild_id'>
-        <img src='$small$pfad' alt='img $bild_id' loading='lazy'>
-      </a>
-      <br>
-      <div class='t'>
-        $bild_id
-      </div>
-    </div>
-  </div>";
-?>
--->
-
 <div class='card'>
-  <!-- <a href='viewer.php?id=<?php echo $id;?>'> -->
   <a href='../01_viewer.php?id=<?php echo $id;?>'>
     <div><img src='<?php echo "../sl_Esche/S/$pfad";?>' alt="<?php echo $id ?>"></div>
     <div class="text-center nodeco"><?php echo $id;?></div>
   </a>
 </div>
 
-
 <?php endforeach ?>
 <div style="clear: left;"></div>
-<div class="text-center"><?php
-echo goToImage(7832);
-echo paginator();
-
-
-?></div>
+<div class="text-center"><?php echo paginator();?></div>
 <?php include("./elements/footer.php");?>
