@@ -2,7 +2,7 @@
 namespace App\Picture;
 
 class PicturesRepository {
-  function fetchImages(int $ipp = 21, int $pageNumer = 20) {
+  function fetchPictures(int $ipp = 21, int $pageNumer = 20) {
     global $pdo;
 
     // $ipp = 22; // image per page
@@ -14,7 +14,7 @@ class PicturesRepository {
     return $stmt;
   }
 
-  function fetchImage($id) {
+  function fetchPicture($id) {
     global $pdo;
 
     $stmt = $pdo->prepare("SELECT * FROM `Bilder` WHERE id = :id");

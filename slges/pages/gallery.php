@@ -14,18 +14,14 @@
 
 
 <div class="text-center"><?php echo paginator();?></div>
+
+
 <?php
-  // $pageNumber = pageNumber();
-  // $getImagePerPage = getImagePerPage();
-  // echo "<div>$pageNumber = pageNumber</div>";
-  // echo "<div>$getImagePerPage = getImagePerPage</div>";
-  // $morePictures = $getImagePerPage + 1;
-  // $lessPictures = $getImagePerPage - 1;
+  $picturesRepository = new App\Picture\PicturesRepository;
+  $res = $picturesRepository->fetchPictures(getImagePerPage(), pageNumber());
+  // $res = fetch_images(getImagePerPage(), pageNumber());
 ?>
 
-
-
-<?php $res = fetch_images(getImagePerPage(), pageNumber());?>
 <?php foreach ($res as $row) : ?>
 <?php
   $id = $row["id"];

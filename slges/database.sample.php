@@ -6,18 +6,16 @@
   );
 
   $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
-
-  function fetch_images() {
+  function fetch_images(int $ipp = 21, int $pageNumer = 20) {
     global $pdo;
 
-    $image_id = 95;
-    $image_id = $image_id - 6;
+    // $ipp = 22; // image per page
+    // $image_id = 95;
+    // $image_id = $image_id - ($ipp / 2);
 
-    $stmt = $pdo->prepare("SELECT * FROM Bilder ORDER BY id ASC LIMIT 11 OFFSET :image_id");
-    $stmt->execute(['image_id' => $image_id]);
+    $stmt = $pdo->prepare("SELECT * FROM Bilder ORDER BY id ASC LIMIT :ipp OFFSET :pageNumer");
+    $stmt->execute(['pageNumer' => $pageNumer, 'ipp' => $ipp]);
     return $stmt;
-    // return $pdo->query("SELECT * FROM Bilder ORDER BY id ASC LIMIT 11 OFFSET $image_id");
-    // return $pdo->query("SELECT * FROM `Bilder`");
   }
 
   function fetch_image($id) {
@@ -26,14 +24,5 @@
     $stmt = $pdo->prepare("SELECT * FROM `Bilder` WHERE id = :id");
     $stmt->execute(['id' => $id]);
     return $stmt->fetch();
-    /*
-    */
-
-    /*
-    $query = "SELECT * FROM `Bilder` WHERE id = '{$id}'";
-    var_dump($query);
-    $q = $pdo->query($query);
-    return $q->fetch();
-    */
   }
 ?>
