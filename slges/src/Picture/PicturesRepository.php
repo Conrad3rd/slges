@@ -15,7 +15,10 @@ class PicturesRepository {
 
     $stmt = $this->pdo->prepare("SELECT * FROM Bilder ORDER BY id ASC LIMIT :ipp OFFSET :pageNumer");
     $stmt->execute(['pageNumer' => $pageNumer, 'ipp' => $ipp]);
-    return $stmt;
+
+    $pictures = $stmt->fetchAll(PDO::FETCH_CLASS, "App\\Picture\\PictureModel");
+    // var_dump($pictures);
+    return $pictures;
   }
 
   function fetchPicture($id) {

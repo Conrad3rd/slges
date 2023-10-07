@@ -22,8 +22,8 @@
 
 <?php foreach ($res as $row) : ?>
 <?php
-  $id = $row["id"];
-  $pfad = $row["pfad"];
+  $id = $row->id;
+  $pfad = $row->pfad;
 ?>
 
 <div class='card'>
