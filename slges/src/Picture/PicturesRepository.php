@@ -13,10 +13,6 @@ class PicturesRepository {
 
   function fetchPictures(int $ipp = 21, int $pageNumer = 20) {
 
-    // $ipp = 22; // image per page
-    // $image_id = 95;
-    // $image_id = $image_id - ($ipp / 2);
-
     $stmt = $this->pdo->prepare("SELECT * FROM Bilder ORDER BY id ASC LIMIT :ipp OFFSET :pageNumer");
     $stmt->execute(['pageNumer' => $pageNumer, 'ipp' => $ipp]);
     return $stmt;
