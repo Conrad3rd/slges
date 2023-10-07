@@ -7,7 +7,7 @@ $hashs = array(
             "Wer ist das?", "nicht Myanmar", "Rot", "Nummernschild", "Bus", "Auto",
             "Rikscha", "Fahrrad", "Schirm", "Mönch", "Buddha", "Musik", "Tanz", "Dorf",
             "Lastenträger", "Bagan", "Bago", "Berg", "Soldat", "Raucher", "Restaurant",
-            "Hafen", "Stupa"
+            "Hafen", "Stupa", "Korb"
           );
 
 
