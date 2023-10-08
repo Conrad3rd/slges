@@ -22,6 +22,7 @@
 
 <?php foreach ($res as $row) : ?>
 <?php
+  // $id = $row['id'];
   $id = $row->id;
   $pfad = $row->pfad;
 ?>
